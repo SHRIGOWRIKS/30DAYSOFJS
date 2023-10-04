@@ -1,0 +1,77 @@
+// Declare an empty array;
+
+const names=[];
+// Declare an array with more than 5 number of elements
+
+const numbers1=[1,2,3,4,5,6]
+// Find the length of your array
+
+console.log(numbers1.length)
+// Get the first item, the middle item and the last item of the array
+console.log(numbers1[0],numbers1[3],numbers1[5]);
+// Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+const mixedArray=[
+    1,
+    'name',
+    true,
+    null,
+    undefined
+]
+
+// Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+const itCompanies=['facebook','google','microsoft','apple','IBM','Amazon']
+
+// Print the array using console.log()
+console.log(itCompanies)
+// Print the number of companies in the array
+console.log(itCompanies.length)
+// Print the first company, middle and last company
+console.log(itCompanies[0],itCompanies[2],itCompanies[5])
+// Print out each company
+itCompanies.map((itcomapny)=>
+
+console.log(itcomapny.toLocaleUpperCase()))
+// Change each company name to uppercase one by one and print them out
+
+// Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+console.log(itCompanies.join(',')+' are big IT companies')
+// Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+const isExists=itCompanies.includes('facebook')
+if(isExists) {
+    console.log(itCompanies[0])
+}
+else{
+    console.log('doesnt exists')
+}
+// Filter out companies which have more than one 'o' without the filter method
+
+const filteredCompanies=itCompanies.filter((filternames)=>{
+    return !filternames.toLowerCase().includes('o')
+})
+console.log(filteredCompanies)
+// Sort the array using sort() method
+const sortComapny=itCompanies.sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()))
+console.log(sortComapny)
+// Reverse the array using reverse() method
+const reversArr=sortComapny.reverse()
+console.log(reversArr)
+// Slice out the first 3 companies from the array
+const sliceArr=sortComapny.slice(0,3)
+console.log(sliceArr)
+// Slice out the last 3 companies from the array
+const slcArr=itCompanies.slice(-3)
+console.log(slcArr)
+// Slice out the middle IT company or companies from the array
+const middelSlice=itCompanies.slice(2,4)
+console.log(middelSlice)
+// Remove the first IT company from the array
+console.log(itCompanies.shift())
+// Remove the middle IT company or companies from the array
+console.log(itCompanies)
+console.log(itCompanies.splice(2,2))
+// Remove the last IT company from the array
+console.log(itCompanies.pop())
+// Remove all IT companies
+console.log(itCompanies)
+console.log(itCompanies.splice(0,2))
+console.log(itCompanies)

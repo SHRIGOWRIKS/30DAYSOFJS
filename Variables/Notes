@@ -1,0 +1,10 @@
+let firstName = 'gowri'
+firstName = 'sri gowri'
+
+const PI = 3.14 // Not allowed to reassign PI to a new value
+// PI = 3.
+
+//Avoid Var
+
+//Datatypes--primtive--string,boolean,number,null,undefined,symbol
+//Non-primitive--array objects functions
