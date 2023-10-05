@@ -159,6 +159,7 @@ console.log('Avg',averageRatingInfo);
 
 function likeProduct(productId, userId) {
   const productIndex = products.findIndex(product => product._id === productId);
+  console.log(productIndex)
 
   if (productIndex !== -1) {
     const product = products[productIndex];
